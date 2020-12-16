@@ -1,0 +1,54 @@
+#include <stdio.h>
+int main()
+{  
+   int rno,cl,p,e,m,s,t;
+   char name[20],fname[20];
+   float per;
+   printf("Enter the student's name\n");
+   gets (name);
+   printf("Enter the father's name\n ");
+   gets (fname);
+   printf("Enter the rol no\n ");
+   scanf("%i",&rno);
+   printf("Enter the class\n");
+   scanf("%i",&cl); 
+   printf("Enter the marks in punjabi\n");
+   scanf("%i",&p);  
+   printf("Enter the marks in english\n");
+   scanf("%i",&e);
+   printf("Enter the marks in maths\n");
+   scanf("%i",&m);
+   printf("Enter the marks in science\n");
+   scanf("%i",&s);
+   t=p+e+m+s;
+   per=(t*100)/400;
+   printf("\n                MARKSHEET");
+   printf("\n====================================================");
+   printf("\nSTUDENT'S NAME: %s ",name);
+   printf("\nFATHER'S NAME:  %s",fname);
+   printf("\nCLASS:          %i",cl);
+   printf("\nROLL NO:        %i",rno);
+   printf("\n====================================================");
+   printf("\n SUBJECT     PASS MARKS     MAX MARKS     OBT MARKS");
+   printf("\n====================================================");
+   printf("\nPUNJABI         33            100           %i ",p);
+   printf("\nENGLISH         33            100           %i ",e);
+   printf("\nMATHS           33            100           %i ",m);
+   printf("\nSCIENCE         33            100           %i ",s);
+   printf("\n====================================================");
+   printf("\nTOTAL          132            400           %i ",t);
+   printf("\nPERCENTAGE                                  %0.2f ",per);
+   printf("\n====================================================");
+   if(per>=33)
+   printf("\nREMARKS                                      PASS");
+   else
+   printf("\nREMARKS                                      FAIL");
+   return 0;
+    
+}
+
+
+
+
+  
+
